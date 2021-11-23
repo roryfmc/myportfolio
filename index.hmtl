@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Rory Fagan-McNulty</title>
+        <script>
+           $(document).on('click', 'a[href^="#"]', function (event) {
+	                event.preventDefault();
+
+                    $('html, body').animate({
+                        scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 500);
+            });
+            function myFunction() {
+                var x = document.getElementById("ed-list");
+                var y = document.getElementById("work-list")
+                $(x).show()
+                $(y).hide()
+                
+            }
+            function myFunction1() {
+                var x = document.getElementById("ed-list");
+                var y = document.getElementById("work-list")
+                $(y).show()
+                $(x).hide()
+            }
+        </script>
+    </head>
+    <body>
+        <main>
+                <header>
+                    <nav class="navMenu">
+                        <a href="#AboutMe">AboutMe</a>
+                        <a href="#">Projects</a>
+                    </nav>
+                </header>
+
+                <section id="AboutMe" class="qual-section">
+                        <h2 class="section-title">Qaulifications</h2>
+                        <span class="section-sub">My Qaulifications</span>
+                        <div class="qual-container container">
+                            <div class="qual-tabs">
+                                
+                                <div class="qual-button">
+                                    <i class="uil uil-abacus qual-icon"></i>
+                                    <button onclick="myFunction()" class="qaul-button">Education</button>
+                                </div>
+                                <div class="qual-button">
+                                    <i class="uil uil-bag qual-icon"></i>
+                                    <button onclick="myFunction1()" class="qaul-button">Work Experience</button>
+                                </div>
+                            </div>
+                            <ul id="ed-list"class="centre">
+                                <li>
+                                    <h3 class="qual-title">A-Level Business Studies 2018-2021</h3>
+                                        <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
+                                </li>
+                                <li>
+                                    <h3 class="qual-title">A-Level Computer Science 2018-2021</h3>
+                                    <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
+                                </li>
+                                <li>
+                                    <h3 class="qual-title">A-Level Product Design 2018-2021</h3>
+                                    <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
+                                </li>
+                                <li>
+                                    <h3 class="qual-title">A-Level EPQ 2018-2021</h3>
+                                    <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
+                                </li>
+                            </ul>
+                            <ul id="work-list" style="display: none" class="centre">
+                                <li>
+                                    <h3 class="qual-title">Data Entry Clerk - 2018</h3>
+                                        <span class="qual-sub">DKF Recruitment Agency - Cheshire</span>
+                                </li>
+                                <li>
+                                    <h3 class="qual-title">Data Entry Clerk - 2019</h3>
+                                        <span class="qual-sub">Kennedy Wilson - Luxembourg</span>
+                                </li>
+                                <li>
+                                    <h3 class="qual-title">COVID-19 Tracer - 2020</h3>
+                                        <span class="qual-sub">Sitel Group - Cheshire</span>
+                                </li>
+                                <li>
+                                    <h3 class="qual-title">Bartender - 2021</h3>
+                                        <span class="qual-sub">Revolution - Deansgate Manchester</span>
+                                </li>
+                            </ul>
+                        </div>
+                </section>
+        </main>
+       <footer>
+        </footer>
+    </body>
+</html>
