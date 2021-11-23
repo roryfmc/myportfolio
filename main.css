@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background: #272727;
+    font-family: JetBrains Mono;
+    height: 3000px;
+}
+li{
+  list-style-type: none;
+  padding: .5rem;
+}
+.centre{
+  text-align: center;
+}
+.navMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a  {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 250px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.qual-container{
+  justify-content: center;
+  align-items: center;
+}
+.qual-section{
+  justify-content: center;
+  align-items: center;
+  left: 35%;
+  top: 100%;
+  position: absolute;
+  padding: 2rem 0 4rem
+}
+
+.section-sub{
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.section-title{
+  font-size: 4.5rem;
+}
+
+.section-sub, .section-title{
+  text-align: center;
+}
+.section-sub, .section-title, span, h3, i, div{
+  color: whitesmoke;
+}
+
+.container{
+  max-width: 768px;
+  margin-left: var(1.5rem);
+  margin-right: var(1.5rem);
+}
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+.qual-tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.qaul-button{
+  color: whitesmoke;
+  background-color: transparent;
+  font-family: JetBrains Mono;
+  border: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.qaul-button:hover{
+  color: #fddb3a;
+}
+.qual-icon{
+  font-size: 1.8rem;
+  margin-right: 0.25rem;
+}
+.qual-data{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+}
+.qual-sub{
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.qual-rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.qual-line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: violet;
+  transform: translate(6px, -7px);
+}
+
+.left{
+  float: left;
+}
