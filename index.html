@@ -19,6 +19,8 @@
             function myFunction() {
                 var x = document.getElementById("ed-list");
                 var y = document.getElementById("work-list")
+                $(x).css('color', 'red')
+                $(y).css('color', 'whitesmoke')
                 $(x).show()
                 $(y).hide()
                 
@@ -26,6 +28,8 @@
             function myFunction1() {
                 var x = document.getElementById("ed-list");
                 var y = document.getElementById("work-list")
+                $(y).css('color', 'red')
+                $(x).css('color', 'whitesmoke')
                 $(y).show()
                 $(x).hide()
             }
@@ -35,11 +39,21 @@
         <main>
                 <header>
                     <nav class="navMenu">
+                        
                         <a href="#AboutMe">AboutMe</a>
                         <a href="#Projects">Projects</a>
                     </nav>
-                </header>
+                    <ul class="social-media">
+                        <li>
+                            <a href="https://www.linkedin.com/in/roryfmc/" class="fa fa-linkedin soc-icons" style="font-size: 36px"></a>
+                            <i></i>
+                            <a href="https://www.github.com/roryfmc/" class="fa fa-github soc-icons" style="font-size: 36px"></a>
+                        </li>
+                    </ul>
 
+                        
+                </header>
+                
                 <section id="AboutMe" class="qual-section">
                         <h2 class="section-title">Qaulifications</h2>
                         <span class="section-sub">My Qaulifications</span>
@@ -57,19 +71,23 @@
                             </div>
                             <ul id="ed-list"class="centre">
                                 <li>
-                                    <h3 class="qual-title">A-Level Business Studies 2018-2021</h3>
+                                    <h3 class="qual-title">Master of Science - MS, Computer Science 2020 - 2021</h3>
+                                        <a href="https://www.ncl.ac.uk/"><span class="qual-sub">Newcastle University</span></a>
+                                </li>
+                                <li>
+                                    <h3 class="qual-title">A-Level Business Studies 2018 - 2020</h3>
                                         <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
                                 </li>
                                 <li>
-                                    <h3 class="qual-title">A-Level Computer Science 2018-2021</h3>
+                                    <h3 class="qual-title">A-Level Computer Science 2018 - 2020</h3>
                                     <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
                                 </li>
                                 <li>
-                                    <h3 class="qual-title">A-Level Product Design 2018-2021</h3>
+                                    <h3 class="qual-title">A-Level Product Design 2018 - 2020</h3>
                                     <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
                                 </li>
                                 <li>
-                                    <h3 class="qual-title">A-Level EPQ 2018-2021</h3>
+                                    <h3 class="qual-title">A-Level EPQ 2018 - 2020</h3>
                                     <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
                                 </li>
                             </ul>
@@ -99,7 +117,7 @@
                     <div class="proj-container container">
                         <ul class="column">
                             <li class="card">
-                                <a href="https://github.com/roryfmc/roryfmc.github.io"><h3 class="proj-h3">This Website</h3></a>
+                                <a href="https://github.com/roryfmc/proxyrotator"><h3 class="proj-h3">This Website</h3></a>
                                     <span><b>November-2021</b></span>
                                     <p></p>
                                     <span>A personal portfolio and place to show my software engineering development
