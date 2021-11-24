@@ -154,3 +154,124 @@ li{
 .proj-h3{
   font-size: 2rem;
 }
+.social-media{
+  top:40%;
+  left: 45%;
+  position: absolute;
+  padding: 10px 10px;
+}
+.soc-icons{
+  padding: 0 10px;
+}
+.soc-icons:hover{
+  transform: scale(1.2);
+}
+.ed-list-color{
+  color
+}
+.work-list-color{
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 1019px){
+.navMenu a{
+  font-size: 2rem;
+  width: auto;
+}
+.qual-section{
+  left: 20%;
+  position: absolute;
+}
+.proj-section{
+  left: 10%;
+  position: absolute;
+}
+.social-media{
+top: 40%;
+left: 40%;
+}
+}
+@media screen and (max-width: 920px) {
+  .qual-section{
+    position: absolute;
+    left: 18%;
+  }
+}
+@media screen and (max-width: 810px) {
+  .qual-section{
+    left: 12%;
+    position: absolute;
+  }
+  .section-title{
+    font-size: 2.5rem;
+  }
+  .section-sub{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+  .qaul-button{
+    font-size: 1rem;
+  }
+  .qual-icon{
+    font-size: 1.2rem;
+  }
+  .qual-title{
+    font-size: 1.2rem;
+  }
+  .qual-sub{
+    font-size: 1rem;
+  }
+  .proj-section{
+    left: 3%;
+    position: absolute;
+  }
+  .card{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 595px){
+  .navMenu a{
+    font-size: 1.5rem;
+  }
+  .social-media{
+    font-size: 18px;
+  }
+  .qual-section{
+    left: 5%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 450px){
+  .navMenu a{
+    display: flex;
+    font-size: 3rem;
+  }
+  .social-media{
+    top: 30%;
+    left: 30%;
+    position: absolute;
+  }
+  .qaul-button{
+    font-size: 1rem;
+  }
+  .qual-icon{
+    font-size: 1.2rem;
+  }
+  .qual-title{
+    font-size: 1rem;
+  }
+  .qual-sub{
+    font-size: 1rem;
+  }
+  .proj-section{
+    left: 3%;
+    position: absolute;
+  }
+  .card{
+    font-size: .5rem;
+  }
+  .column{
+    width: 100%;
+  }
+
+}
