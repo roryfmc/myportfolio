@@ -27,6 +27,13 @@ li{
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.navMenu1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 .navMenu a  {
   color: #f6f4e6;
@@ -39,7 +46,21 @@ li{
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.navMenu1 a  {
+  color: black;
+  text-decoration: none;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 250px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 .navMenu a:hover {
+  color: #fddb3a;
+}
+.navMenu1 a:hover {
   color: #fddb3a;
 }
 
@@ -72,6 +93,11 @@ li{
 }
 .section-title{
   font-size: 4.5rem;
+  color: whitesmoke;
+}
+.section-title1{
+  font-size: 4.5rem;
+  color: black;
 }
 
 .section-sub, .section-title{
@@ -165,9 +191,6 @@ li{
 }
 .soc-icons:hover{
   transform: scale(1.2);
-}
-.ed-list-color{
-  color
 }
 .work-list-color{
   color: whitesmoke;
@@ -274,4 +297,26 @@ left: 40%;
     width: 100%;
   }
 
+  .dark-mode{
+    background-color: whitesmoke;
+    color: black;
+  }
+  .black{
+    color: blue
+  }
+}
+@media screen and (max-height: 800px){
+  .social-media{
+    top: 35%;
+    left: 40%;
+    position: absolute;
+  }
+  .qual-section{
+    position: absolute;
+    left: 30%;
+  }
+  .proj-section{
+    position: absolute;
+    left: 25%;
+  }
 }
