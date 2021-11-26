@@ -33,18 +33,73 @@
                 $(y).show()
                 $(x).hide()
             }
+            function darkorlight1(){
+                var light = document.getElementById("sun");
+                var dark = document.getElementById("moon");
+                var firstnav = document.getElementById("nav1")
+                var secondnav = document.getElementById("nav2")
+                var firsttitle = document.getElementById("qual-title-one")
+                var secondtitle = document.getElementById("qual-title-two")
+                $(firsttitle).hide()
+                $(secondtitle).show()
+                $(firstnav).hide()
+                $(secondnav).show()
+                $(sun).hide()
+                $(moon).show()
+                var element = document.body;
+                var content = document.getElementById("sun");
+                element.className = "light-mode";
+
+            }
+            function darkorlight(){
+                var light = document.getElementById("sun");
+                var dark = document.getElementById("moon");
+                var firstnav = document.getElementById("nav1")
+                var secondnav = document.getElementById("nav2")
+                var firsttitle = document.getElementById("qual-title-one")
+                var secondtitle = document.getElementById("qual-title-two")
+                $(firsttitle).show()
+                $(secondtitle).hide()
+                $(firstnav).show()
+                $(secondnav).hide()
+                $(moon).hide()
+                $(sun).show()
+                var element = document.body;
+                var content = document.getElementById("moon");
+                element.className = "dark-mode";
+            }
         </script>
+        <style>
+            .light-mode{
+                background: whitesmoke;
+            }
+            .light-mode span, a, nav, qual-button, i, h3, section-title{
+                    color: black;
+                }
+            .lightmode h3{
+                color: black;
+            }
+            .dark-mode{
+                background: #272727;
+                color:blue;
+            }
+        </style>
     </head>
     <body>
         <main>
                 <header>
-                    <nav class="navMenu">
-                        
+                    <nav id="nav1" class="navMenu">
+                        <a href="#AboutMe">AboutMe</a>
+                        <a href="#Projects">Projects</a>
+                    </nav>
+                    <nav id="nav2" class="navMenu1" style="display: none;">
                         <a href="#AboutMe">AboutMe</a>
                         <a href="#Projects">Projects</a>
                     </nav>
                     <ul class="social-media">
                         <li>
+                            <button id="sun" onclick="darkorlight1()" class="qaul-button"><i class="uil uil-sun" style="font-size: 36px;"></i></button>
+                            <button id="moon" onclick="darkorlight()" class="qaul-button" style="display: none;"><i class="uil uil-moon" style="font-size: 36px;  color: black;"></i></button>
                             <a href="https://www.linkedin.com/in/roryfmc/" class="fa fa-linkedin soc-icons" style="font-size: 36px"></a>
                             <i></i>
                             <a href="https://www.github.com/roryfmc/" class="fa fa-github soc-icons" style="font-size: 36px"></a>
@@ -55,7 +110,8 @@
                 </header>
                 
                 <section id="AboutMe" class="qual-section">
-                        <h2 class="section-title">Qaulifications</h2>
+                        <h2 id="qual-title-one"class="section-title">Qaulifications</h2>
+                        <h2 id="qual-title-two"class="section-title1" style="display: none;">Qaulifications</h2>
                         <span class="section-sub">My Qaulifications</span>
                         <div class="qual-container container">
                             <div class="qual-tabs">
@@ -71,7 +127,7 @@
                             </div>
                             <ul id="ed-list"class="centre">
                                 <li>
-                                    <h3 class="qual-title">Master of Science - MS, Computer Science 2020 - 2024</h3>
+                                    <h3 class="qual-title">Master of Science - MS, Computer Science 2020 - 2021</h3>
                                         <a href="https://www.ncl.ac.uk/"><span class="qual-sub">Newcastle University</span></a>
                                 </li>
                                 <li>
@@ -112,7 +168,8 @@
                         </div>
                 </section>
                 <section id="Projects" class="proj-section">
-                    <h2 class="section-title">Projects</h2>
+                    <h2 id="proj-title" class="section-title">Projects</h2>
+                    <h2 id="proj-title1" class="section-title1" style="display: none;">Projects</h2>
                     <span class="section-sub">My Projects</span>
                     <div class="proj-container container">
                         <ul class="column">
@@ -176,7 +233,5 @@
                         
                 </section>
         </main>
-       <footer>
-        </footer>
     </body>
 </html>
