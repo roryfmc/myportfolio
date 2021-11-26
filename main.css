@@ -305,7 +305,7 @@ left: 40%;
     color: blue
   }
 }
-@media screen and (max-height: 800px){
+@media screen and (max-height: 760px){
   .social-media{
     top: 35%;
     left: 40%;
