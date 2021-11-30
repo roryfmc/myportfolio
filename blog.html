@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main2.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/jpg" href="favicon-32x32.png"/>
+        <title>Rory Fagan-McNulty</title>
+        <script>
+           $(document).on('click', 'a[href^="#"]', function (event) {
+	                event.preventDefault();
+
+                    $('html, body').animate({
+                        scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 500);
+            });
+            function myFunction() {
+                var x = document.getElementById("ed-list");
+                var y = document.getElementById("work-list")
+                $(x).css('color', 'red')
+                $(y).css('color', 'whitesmoke')
+                $(x).show()
+                $(y).hide()
+                
+            }
+            function myFunction1() {
+                var x = document.getElementById("ed-list");
+                var y = document.getElementById("work-list")
+                $(y).css('color', 'red')
+                $(x).css('color', 'whitesmoke')
+                $(y).show()
+                $(x).hide()
+            }
+            function darkorlight1(){
+                var light = document.getElementById("sun");
+                var dark = document.getElementById("moon");
+                var firstnav = document.getElementById("nav1")
+                var secondnav = document.getElementById("nav2")
+                var blogt1 = document.getElementById("blot1")
+                var blogt2 = document.getElementById("blogt2")
+                $(blogt2).show()
+                $(blogt1).hide()
+                $(firstnav).hide()
+                $(secondnav).show()
+                $(sun).hide()
+                $(moon).show()
+                var element = document.body;
+                var content = document.getElementById("sun");
+                element.className = "light-mode";
+
+            }
+            function darkorlight(){
+                var light = document.getElementById("sun");
+                var dark = document.getElementById("moon");
+                var firstnav = document.getElementById("nav1")
+                var secondnav = document.getElementById("nav2")
+                var blogt1 = document.getElementById("blot1")
+                var blogt2 = document.getElementById("blogt2")
+                $(blogt2).hide()
+                $(blogt1).show()
+                $(firstnav).show()
+                $(secondnav).hide()
+                $(moon).hide()
+                $(sun).show()
+                var element = document.body;
+                var content = document.getElementById("moon");
+                element.className = "dark-mode";
+            }
+        </script>
+        <style>
+            .light-mode{
+                background: whitesmoke;
+            }
+            .light-mode span, h3, h2, body{
+                    color: black;
+                }
+            .lightmode h3{
+                color: black;
+            }
+            .dark-mode span, h3, body{
+                background: #272727;
+                color:whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+                <header>
+                    <nav id="nav1" class="navMenu dark">
+                        <ul>
+                            <li>
+                                <a href="index.html" style="color: whitesmoke;">Home</a>
+                            </li>
+                            <li>
+                                <a href="#AboutMe" style="color: whitesmoke;">About Me</a>
+                            </li>
+                            <li>
+                                <button id="sun" onclick="darkorlight1()" class="qaul-button"><i class="uil uil-sun" style="font-size: 56px; color: whitesmoke;"></i></button>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav id="nav2" class="navMenu light" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="index.html" style="color: black;">Home</a>
+                                
+                            </li>
+                            <li>
+                                <a href="#AboutMe" style="color: black;">About Me</a>
+                            </li>
+                            <li>
+                                <button id="moon" onclick="darkorlight()" class="qaul-button" style="display: none;"><i class="uil uil-moon" style="font-size: 56px;  color: black;"></i></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <section>
+                        <h2 id="blogt1" class="blog-title" style="color: whitesmoke;">My Blog:</h2>
+                        <h2 id="blogt2" class="blog-title" style="display: none; color: black;">My Blog:</h2>
+                        <div class="blog-section">
+                            <span class="blog-sub">EPQ - Dark Web project</span>
+                            <div></div>
+                            <span class="blog-date">March - 2018</span>
+                        </div>
+                </section>
+                
+        </main>
+    </body>
+</html>
