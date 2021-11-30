@@ -72,17 +72,19 @@ li{
 .qual-section{
   justify-content: center;
   align-items: center;
-  left: 35%;
+  left: 50%;
   top: 100%;
+  transform: translate(-50%);
   position: absolute;
   padding: 2rem 0 4rem
 }
 .proj-section{
   justify-content: center;
   align-items: center;
-  left: 30%;
+  left: 50%;
   top: 200%;
   position: absolute;
+  transform: translate(-50%);
   padding: 2rem 0 4rem
 }
 
@@ -181,9 +183,10 @@ li{
   font-size: 2rem;
 }
 .social-media{
-  top:40%;
-  left: 45%;
+  top: 40%;
+  left: 50%;
   position: absolute;
+  transform: translate(-50%, -50%);
   padding: 10px 10px;
 }
 .soc-icons{
@@ -201,30 +204,12 @@ li{
   font-size: 2rem;
   width: auto;
 }
-.qual-section{
-  left: 20%;
-  position: absolute;
-}
-.proj-section{
-  left: 10%;
-  position: absolute;
-}
 .social-media{
-top: 40%;
-left: 40%;
+  font-size: 12px;
+  width: 250px;
 }
-}
-@media screen and (max-width: 920px) {
-  .qual-section{
-    position: absolute;
-    left: 18%;
-  }
-}
+
 @media screen and (max-width: 810px) {
-  .qual-section{
-    left: 12%;
-    position: absolute;
-  }
   .section-title{
     font-size: 2.5rem;
   }
@@ -244,10 +229,6 @@ left: 40%;
   .qual-sub{
     font-size: 1rem;
   }
-  .proj-section{
-    left: 3%;
-    position: absolute;
-  }
   .card{
     font-size: 1rem;
   }
@@ -257,22 +238,13 @@ left: 40%;
     font-size: 1.5rem;
   }
   .social-media{
-    font-size: 18px;
-  }
-  .qual-section{
-    left: 5%;
-    position: absolute;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 450px){
   .navMenu a{
     display: flex;
     font-size: 3rem;
-  }
-  .social-media{
-    top: 30%;
-    left: 30%;
-    position: absolute;
   }
   .qaul-button{
     font-size: 1rem;
@@ -285,10 +257,6 @@ left: 40%;
   }
   .qual-sub{
     font-size: 1rem;
-  }
-  .proj-section{
-    left: 3%;
-    position: absolute;
   }
   .card{
     font-size: .5rem;
@@ -305,18 +273,9 @@ left: 40%;
     color: blue
   }
 }
-@media screen and (max-height: 760px){
+@media screen and (max-width: 350px){
   .social-media{
-    top: 35%;
-    left: 40%;
-    position: absolute;
+    width: 250px;
   }
-  .qual-section{
-    position: absolute;
-    left: 30%;
-  }
-  .proj-section{
-    position: absolute;
-    left: 25%;
-  }
+}
 }
