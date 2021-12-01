@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main2.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/jpg" href="favicon-32x32.png"/>
+        <title>Rory Fagan-McNulty</title>
+        <script>
+           $(document).on('click', 'a[href^="#"]', function (event) {
+	                event.preventDefault();
+
+                    $('html, body').animate({
+                        scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 500);
+            });
+            function myFunction() {
+                var x = document.getElementById("ed-list");
+                var y = document.getElementById("work-list")
+                $(x).css('color', 'red')
+                $(y).css('color', 'whitesmoke')
+                $(x).show()
+                $(y).hide()
+                
+            }
+            function myFunction1() {
+                var x = document.getElementById("ed-list");
+                var y = document.getElementById("work-list")
+                $(y).css('color', 'red')
+                $(x).css('color', 'whitesmoke')
+                $(y).show()
+                $(x).hide()
+            }
+            function darkorlight1(){
+                var light = document.getElementById("sun");
+                var dark = document.getElementById("moon");
+                var firstnav = document.getElementById("nav1")
+                var secondnav = document.getElementById("nav2")
+                $(firstnav).hide()
+                $(secondnav).show()
+                $(sun).hide()
+                $(moon).show()
+                var element = document.body;
+                var content = document.getElementById("sun");
+                element.className = "light-mode";
+
+            }
+            function darkorlight(){
+                var light = document.getElementById("sun");
+                var dark = document.getElementById("moon");
+                var firstnav = document.getElementById("nav1")
+                var secondnav = document.getElementById("nav2")
+                $(firstnav).show()
+                $(secondnav).hide()
+                $(moon).hide()
+                $(sun).show()
+                var element = document.body;
+                var content = document.getElementById("moon");
+                element.className = "dark-mode";
+            }
+        </script>
+        <style>
+            .light-mode{
+                background: whitesmoke;
+            }
+            .light-mode span, h3, h2, body{
+                    color: black;
+                }
+            .lightmode h3{
+                color: black;
+            }
+            .dark-mode span, h3, body{
+                background: #272727;
+                color:whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+                <header>
+                    <nav id="nav1" class="navMenu dark">
+                        <ul>
+                            <li>
+                                <a href="index.html" style="color: whitesmoke;">Home</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" style="color: whitesmoke;">Blog</a>
+                            </li>
+                            <li>
+                                <button id="sun" onclick="darkorlight1()" class="qaul-button"><i class="uil uil-sun" style="font-size: 56px; color: whitesmoke;"></i></button>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav id="nav2" class="navMenu light" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="index.html" style="color: black;">Home</a>
+                                
+                            </li>
+                            <li>
+                                <a href="blog.html" style="color: black;">Blog</a>
+                            </li>
+                            <li>
+                                <button id="moon" onclick="darkorlight()" class="qaul-button" style="display: none;"><i class="uil uil-moon" style="font-size: 56px;  color: black;"></i></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <section>
+                        <div class="blog-section">
+                            <div class="blog-item blog-title"><span>The Spatial Web</span>
+                                <div>
+                                    <span class="blog-date">Gabriel Rene, Dan Mapes</span>
+                                </div>
+                                <div>
+                                    <span class="blog-date">****</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">My recent interests have shifted towards Web3 and I wanted to learn more. If anyone Is looking to learn more on the topic this is the book.
+                                        This book explains the idea of web3 and what It involves as well as the steps needed In order to transition from Web2 - Web3. It also touches on the negative uses of Web3
+                                         and how It could lead to this dystopian future. The book opened my eyes to the future of not only tech but the world and the possible technologies that will exist in 
+                                         the future.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>How To Teach Quantum Physics To Your Dog</span>
+                                <div>
+                                    <span class="blog-date">Chad Orzel</span>
+                                </div>
+                                <div>
+                                    <span class="blog-date">****</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">As someone who despised Physics in school this book made for a very enjoyable read and gave me an insight to quantum mechanics. It wasn't a hard read 
+                                        in terms of dense content but more trying to wrap your head round particular theories. The role of the dog helps massively and as someone not particularly versed in physics 
+                                        helped massively in understanding the concepts put forth. I also read this book to say I was reading a book about quantum physics. Good book.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>Welcome to Blackwater: Mercenaries, Money and Mayhem in Iraq</span>
+                                <div>
+                                    <span class="blog-date">Morgan Lerette</span>
+                                </div>
+                                <div>
+                                    <span class="blog-date">*****</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">The book Is a first person true account of his experience as a Blackwater Operative in Iraq. Apart from the book being juvenile and 
+                                        some what immature. The detail and expeirences in this book are incredibly interesting. It was the first funny book I've read and would recommend reading It
+                                         as long as you keep In mind that Its raw and meant to be juvenile, leading to a very honest book about his experince.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>The Shadow World: Inside the Global Arms Trade</span>
+                                <div>
+                                    <span class="blog-date">Andrew Feinstein</span>
+                                </div>
+                                <div>
+                                    <span class="blog-date">****</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">It is practically a historical account of most of the major arms trades as well as corruption within 
+                                        governments. The book opened my eyes to the sheer scale and money revolving around the arms trade. The only fault to this book is its length however, 
+                                        the amount of different and invaluable content in this book makes up for it. At times it was a bit of a hard read just because of the vasts amount of information. 
+                                        The author doesn't hold back and names everyone. If time I would read.  
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>The Critical Handbook Of Money Laundering</span>
+                                <div>
+                                    <span class="blog-date">Petrus C.Van Duyne, Jackie H.Harvey, Liliya Y.Gelemerova</span>
+                                </div>
+                                <div>
+                                    <span class="blog-date">*</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">It was a hard and dense read, I stopped half-way because it felt never ending. I think when I was reading this book and 'Fundamentals of Offshore Banking' I may have 
+                                         been going through a phase. I think reading these books got the thought of money laundering or offshore banking out of my system just because they were so lifeless.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>Fundamentals of Offshore Banking</span>
+                                <div>
+                                    <span class="blog-date">Walter Tyndale</span>
+                                </div>
+                                <div>
+                                    <span class="blog-date">**</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">Dry read with little pay off. I dont really know what I was hoping from this book, maybe something more secretive? The book didn't really delve into
+                                         specifcs. It was more a large overview of potential methods. This book will not help you evade taxes.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>The Polymath</span>
+                                <div>
+                                    <span class="blog-date">Peter Burke</span>
+                                </div>
+                                <div>
+                                    <span class="blog-date">**</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">After reading Waqas Ahmed's 'The PolyMath'. I wanted to explore the meaning of what it meant to be a polymath. This book was more 
+                                        a historical account of previous polymaths and putting Leonardo Da Vinci on a pedestal.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>The PolyMath</span>
+                                <div>
+                                    <span class="blog-date">Waqas Ahmed</span>
+                                </div>
+                                <div>
+                                    <span class="blog-date">***</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">Tough read considering it was the book that led to me begin reading. Tends to ramble on and was different to my expectations 
+                                        as to what I thought the book would be. I think the title interested me more than the actual contents of the book. As a computer student it 
+                                        gave an insight to how important being a polymath is to have a career in this field and standing out.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                
+        </main>
+    </body>
+</html>
