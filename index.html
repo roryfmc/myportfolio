@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main2.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	    <link rel="shortcut icon" type="image/jpg" href="favicon-32x32.png"/>
+        <link rel="shortcut icon" type="image/jpg" href="favicon-32x32.png"/>
         <title>Rory Fagan-McNulty</title>
         <script>
            $(document).on('click', 'a[href^="#"]', function (event) {
@@ -39,10 +39,6 @@
                 var dark = document.getElementById("moon");
                 var firstnav = document.getElementById("nav1")
                 var secondnav = document.getElementById("nav2")
-                var firsttitle = document.getElementById("qual-title-one")
-                var secondtitle = document.getElementById("qual-title-two")
-                $(firsttitle).hide()
-                $(secondtitle).show()
                 $(firstnav).hide()
                 $(secondnav).show()
                 $(sun).hide()
@@ -57,10 +53,6 @@
                 var dark = document.getElementById("moon");
                 var firstnav = document.getElementById("nav1")
                 var secondnav = document.getElementById("nav2")
-                var firsttitle = document.getElementById("qual-title-one")
-                var secondtitle = document.getElementById("qual-title-two")
-                $(firsttitle).show()
-                $(secondtitle).hide()
                 $(firstnav).show()
                 $(secondnav).hide()
                 $(moon).hide()
@@ -74,165 +66,185 @@
             .light-mode{
                 background: whitesmoke;
             }
-            .light-mode span, a, nav, qual-button, i, h3, section-title{
+            .light-mode span, h3, h2, body{
                     color: black;
                 }
             .lightmode h3{
                 color: black;
             }
-            .dark-mode{
+            .dark-mode span, h3, body{
                 background: #272727;
-                color:blue;
+                color:whitesmoke;
             }
         </style>
     </head>
     <body>
         <main>
                 <header>
-                    <nav id="nav1" class="navMenu">
-                        <a href="#AboutMe">AboutMe</a>
-                        <a href="#Projects">Projects</a>
+                    <nav id="nav1" class="navMenu dark">
+                        <ul>
+                            <li>
+                                <a href="index.html" style="color: whitesmoke;">Home</a>
+                            </li>
+                            <li>
+                                <a href="#AboutMe" style="color: whitesmoke;">About Me</a>
+                            </li>
+                            <li>
+                                <button id="sun" onclick="darkorlight1()" class="qaul-button"><i class="uil uil-sun" style="font-size: 56px; color: whitesmoke;"></i></button>
+                                
+                            </li>
+                        </ul>
                     </nav>
-                    <nav id="nav2" class="navMenu1" style="display: none;">
-                        <a href="#AboutMe">AboutMe</a>
-                        <a href="#Projects">Projects</a>
+                    <nav id="nav2" class="navMenu light" style="display: none;">
+                        <ul>
+                            <li>
+                                <a href="index.html" style="color: black;">Home</a>
+                                
+                            </li>
+                            <li>
+                                <a href="#AboutMe" style="color: black;">About Me</a>
+                            </li>
+                            <li>
+                                <button id="moon" onclick="darkorlight()" class="qaul-button" style="display: none;"><i class="uil uil-moon" style="font-size: 56px;  color: black;"></i></button>
+                            </li>
+                        </ul>
                     </nav>
-                    <ul class="social-media">
-                        <li>
-                            <button id="sun" onclick="darkorlight1()" class="qaul-button"><i class="uil uil-sun" style="font-size: 36px;"></i></button>
-                            <button id="moon" onclick="darkorlight()" class="qaul-button" style="display: none;"><i class="uil uil-moon" style="font-size: 36px;  color: black;"></i></button>
-                            <a href="https://www.linkedin.com/in/roryfmc/" class="fa fa-linkedin soc-icons" style="font-size: 36px"></a>
-                            <i></i>
-                            <a href="https://www.github.com/roryfmc/" class="fa fa-github soc-icons" style="font-size: 36px"></a>
-                        </li>
-                    </ul>
-
-                        
                 </header>
                 
-                <section id="AboutMe" class="qual-section">
-                        <h2 id="qual-title-one"class="section-title">Qaulifications</h2>
-                        <h2 id="qual-title-two"class="section-title1" style="display: none;">Qaulifications</h2>
-                        <span class="section-sub">My Qaulifications</span>
-                        <div class="qual-container container">
-                            <div class="qual-tabs">
-                                
-                                <div class="qual-button">
-                                    <i class="uil uil-abacus qual-icon"></i>
-                                    <button onclick="myFunction()" class="qaul-button">Education</button>
+                <section>
+                        <div class="blog-section">
+                            <div class="blog-item blog-title"><span>Tharsus Web Scraping</span>
+                                <div>
+                                    <span class="blog-date">Nov-Jan -2021-22</span>
                                 </div>
-                                <div class="qual-button">
-                                    <i class="uil uil-bag qual-icon"></i>
-                                    <button onclick="myFunction1()" class="qaul-button">Work Experience</button>
+                                <div>
+                                    <span class="blog-body">My first industry project. This project is meant to aide the company Tharsus in finding parts. This is a hard
+                                         task to do manually at the moment because of worldwide shortages. The origins of the project involved pitching to the University
+                                          staff for an opportunity to do this project. Around 30 teams pitched for the opportunity and 3 were successful, including mine.
+                                          -- This will be updated on completion --
+                                    </span>
+                                    <div>
+                                        <a href="https://tharsus.co.uk/" target="_blank"><button class="qaul-button">View More</button></a>
+                                    </div>
                                 </div>
                             </div>
-                            <ul id="ed-list"class="centre">
-                                <li>
-                                    <h3 class="qual-title">Master of Science - MS, Computer Science 2020 - 2021</h3>
-                                        <a href="https://www.ncl.ac.uk/"><span class="qual-sub">Newcastle University</span></a>
-                                </li>
-                                <li>
-                                    <h3 class="qual-title">A-Level Business Studies 2018 - 2020</h3>
-                                        <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
-                                </li>
-                                <li>
-                                    <h3 class="qual-title">A-Level Computer Science 2018 - 2020</h3>
-                                    <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
-                                </li>
-                                <li>
-                                    <h3 class="qual-title">A-Level Product Design 2018 - 2020</h3>
-                                    <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
-                                </li>
-                                <li>
-                                    <h3 class="qual-title">A-Level EPQ 2018 - 2020</h3>
-                                    <a href="https://www.st-ambrosecollege.org.uk/"><span class="qual-sub">Saint Ambrose College - Sixth Form</span></a>
-                                </li>
-                            </ul>
-                            <ul id="work-list" style="display: none" class="centre">
-                                <li>
-                                    <h3 class="qual-title">Data Entry Clerk - 2018</h3>
-                                        <span class="qual-sub">DKF Recruitment Agency - Cheshire</span>
-                                </li>
-                                <li>
-                                    <h3 class="qual-title">Data Entry Clerk - 2019</h3>
-                                        <span class="qual-sub">Kennedy Wilson - Luxembourg</span>
-                                </li>
-                                <li>
-                                    <h3 class="qual-title">COVID-19 Tracer - 2020</h3>
-                                        <span class="qual-sub">Sitel Group - Cheshire</span>
-                                </li>
-                                <li>
-                                    <h3 class="qual-title">Bartender - 2021</h3>
-                                        <span class="qual-sub">Revolution - Deansgate Manchester</span>
-                                </li>
-                            </ul>
+                            <div class="blog-item blog-title"><span>This Website</span>
+                                <div>
+                                    <span class="blog-date">November-2021 - 2021</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">This website. This website I hope will be constanlty changing and evolving and act as a library of all my projects and
+                                         a few of my interests. I see this as a more interactive and more informal CV / way of getting to know me.
+                                    </span>
+                                    <div>
+                                        <a href="https://github.com/roryfmc/roryfmc.github.io" target="_blank"><button class="qaul-button">View More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>Proxy Rotator</span>
+                                <div>
+                                    <span class="blog-date">October - 2021</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">This project was created as an extension of the Tesco Slotfinder project. One of the biggest problems when 
+                                        web scraping is getting denied access to the website after multiple requests. This is because the website most likely thinks its a possible
+                                        attack. To get round this issue I resorted to making a proxy rotator. The proxy rotator first scrapes from a free proxy website and then tests
+                                         each one. The main and obvious problem with this is the lifespan of free proxies. By the time the algorithm tests the proxies, they are already
+                                          not working. Before going into this project I knew this would be an issue. Despite this the project did allow me to learn more about proxies and 
+                                          ports as well as testing them.
+                                    </span>
+                                    <div>
+                                        <a href="https://github.com/roryfmc/proxyrotator" target="_blank"><button class="qaul-button">View More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>NFT Project</span>
+                                <div>
+                                    <span class="blog-date">Septemeber - 2021</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">As someone who is very up to date with new appearing technologies and very interested in everything crypto the boom of NFTs
+                                         amazed me. I understand the whole concept of NFTs and still dont find the appeal in the area. Despite this however I saw the ridiculous amounts of 
+                                         money being produced and decided to take a shot. After researching how the big market leading collections created their unique NFTs I found there 
+                                         was a lack of information surrounding the process. After querying reddits I came across generative-art-node a opensource repo created by HashLips.
+                                         I modified the algorithm for my own use and imported my own layers which then created 679 unique NFTs. After all of this, I came across the biggest 
+                                         hurdle, money. In order to add the NFTs to OpenSea I would have to pay a Gasfee so that the transaction could be conducted on the Ethereum blockchain.
+                                         I also had the problem of creating 679 unqiue smart contracts for each NFT because of these problems I decieded to shelf the project. 
+                                    </span>
+                                    <div>
+                                        <button class="qaul-button">Coming Soon</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>Colour Detector</span>
+                                <div>
+                                    <span class="blog-date">April - 2021</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">As a University student in University accomodation in the pandemic during lockdown, there were social-distancing 
+                                        measures put in place and enforced by University security. Despite the lockdown and enforcement parties and gatherings were inevitable, If 
+                                        thousands of first year students are placed in halls together Its bound to happen. The main fear from attending / hosting gatherings and parties 
+                                        was fines from security and reprimands from the University if caught. This fear led to me creating a colour detection algorithm which would target 
+                                        security hi-vis yellow. This involved exploring new technologies and the use of masks so that the computer could distinguish colours. This algorithm
+                                         was linked to a camera that was strategically placed on a window looking at the accomodation entrance which would alert me if the target colour was detected.
+                                         This project gave me a massive insight into other python libraries as well as being great help to the student in the accomodation.
+                                    </span>
+                                    <div>
+                                        <a href="https://github.com/roryfmc/colour_detector" target="_blank"><button class="qaul-button">View More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>Tesco SlotFinder</span>
+                                <div>
+                                    <span class="blog-date">March - 2021</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">In the height of the pandemic there was a lack of delivery slots for supermarkets and this was a big problem 
+                                        for people of high risk and those scared of catching the virus. This problem led to me creating a web scraping algorithm specifically 
+                                        for Tesco. The alogrithm would query the website every 30 minutes and send an email if a slot was available. I used technologies such as 
+                                        selenium for the web scraping. This project was very helpful as it gave me an insight to other better web scraping technologies such as 
+                                        BeautifulSoup and other types of projects that could assist the algorithms efficiency such as a Proxy Rotator.
+                                    </span>
+                                    <div>
+                                        <a href ="https://github.com/roryfmc/Tesco_slotfinder" target="_blank"><button class="qaul-button">View More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>Web Devlopment - DKF</span>
+                                <div>
+                                    <span class="blog-date">October - 2020</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">My first expeirence building a website was for DKF Recruitment. As a growing business a website was paramount
+                                         to expand its reach to clients. When presented with the opportunity to build their website I jumped on the opportunity. At the time
+                                         I was not proficient in HTML or CSS and felt I would do them a disserivce by experimenting with the langauges at the point in time. 
+                                         Instead I used Wix to build the website and although it is a straight forware application for building websites, the opportunity meant that
+                                         i gained valuable experience in communicating with the customer and translating their needs to the website.
+                                    </span>
+                                    <div>
+                                        <button class="qaul-button">Coming Soon</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item blog-title"><span>EPQ - DARK WEB</span>
+                                <div>
+                                    <span class="blog-date">MARCH 2018</span>
+                                </div>
+                                <div>
+                                    <span class="blog-body">EPQ stand for Extended Project Qualification. I completed this qualification in sixth
+                                         as part of my A-Levels. The qualifitcation is a 5000 word essay that focuses on an area of your choice.
+                                         I chose to write about the Dark Web at the time as it interested me massively and was something I wanted
+                                         to explore further. At the end of the project I recieved an A.
+                                    </span>
+                                    <div>
+                                        <button class="qaul-button">Coming Soon</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                 </section>
-                <section id="Projects" class="proj-section">
-                    <h2 id="proj-title" class="section-title">Projects</h2>
-                    <h2 id="proj-title1" class="section-title1" style="display: none;">Projects</h2>
-                    <span class="section-sub">My Projects</span>
-                    <div class="proj-container container">
-                        <ul class="column">
-                            <li class="card">
-                                <a href="https://github.com/roryfmc/proxyrotator"><h3 class="proj-h3">This Website</h3></a>
-                                    <span><b>November-2021</b></span>
-                                    <p></p>
-                                    <span>A personal portfolio and place to show my software engineering development
-                                    </span>
-                            </li>
-                            <li class="card">
-                                <h3 class="proj-h3">NFT PROJECT</h3>
-                                    <span><b>September-2021</b></span>
-                                    <p></p>
-                                    <span>A full collection of 679 unique pixelated images. 
-                                        This project was initially intended to be released on OpenSea
-                                    </span>
-                                
-                            </li>
-                            <li class="card">
-                                <a href="https://github.com/roryfmc/Tesco_slotfinder"><h3 class="proj-h3">Tesco SlotFinder</h3></a>
-                                <span><b>March-2021</b></span>
-                                <p></p>
-                                <span>At the peak of Covid 2021, delivery slots
-                                    for shopping were hard to come by. I made my first web
-                                    scraping program to search for slots and then email me 
-                                    when a slot was available
-                                </span>
-                            </li>
-                            
-                        </ul>
-                        <ul class="column">
-                            <li class="card">
-                                <a href="https://github.com/roryfmc/proxyrotator"><h3 class="proj-h3">Proxy Rotator</h3></a>
-                                    <span><b>October-2021</b></span>
-                                    <p></p>
-                                    <span>A proxy scraper and tester
-                                    </span>
-                            </li>
-                            <li class="card">
-                                <a href="https://github.com/roryfmc/colour_detector"><h3 class="proj-h3">Colour Detector</h3></a>
-                                <span><b>April-2021</b></span>
-                                <p></p>
-                                <span>I explored the use of different libraries and looked at
-                                     color detection using masks in python
-                                </span>
-                                
-                            </li>
-                            <li class="card">
-                                <a href="blog.html"><h3 class="proj-h3">Dark Web EPQ</h3></a>
-                                <span><b>June-2019</b></span>
-                                <p></p>
-                                <span>A 5000 word extended project exploring the dark web
-                                        and technologies surrounding it
-                                </span>
-                            </li>
-                            
-                            
-                        </ul>
-                    </div>
-                        
-                </section>
+                
         </main>
     </body>
 </html>
