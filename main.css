@@ -36,24 +36,26 @@ li{
 }
 
 .navMenu a  {
+  text-align: center;
   color: #f6f4e6;
   text-decoration: none;
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
-  width: 250px;
+  margin-right: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .navMenu1 a  {
+  text-align: center;
   color: black;
   text-decoration: none;
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 500;
+  margin-right: 40px;
   display: inline-block;
-  width: 250px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -183,7 +185,7 @@ li{
   font-size: 2rem;
 }
 .social-media{
-  top: 40%;
+  top: 45%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -232,6 +234,9 @@ li{
   .card{
     font-size: 1rem;
   }
+  .social-media{
+    top: 42%;
+  }
 }
 @media screen and (max-width: 595px){
   .navMenu a{
@@ -264,6 +269,9 @@ li{
   .column{
     width: 100%;
   }
+  .social-media{
+    top: 35%;
+  }
 
   .dark-mode{
     background-color: whitesmoke;
@@ -273,7 +281,7 @@ li{
     color: blue
   }
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 380px){
   .social-media{
     width: 250px;
   }
