@@ -200,6 +200,11 @@ li{
 .work-list-color{
   color: whitesmoke;
 }
+@media screen and (max-height: 700px){
+  .social-media{
+    top: 60%;
+  }
+}
 
 @media screen and (max-width: 1019px){
 .navMenu a{
