@@ -6,4 +6,3 @@ All qualifications -
 All work experience -
 Personal Projects -
 Blog of personal projects -
-Book reviews
